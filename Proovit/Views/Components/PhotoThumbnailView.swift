@@ -10,6 +10,7 @@ struct PhotoThumbnailView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
+                    .clipped()
             } else {
                 // TODO: add loading spinner maybe
                 Color(.systemGray5)
